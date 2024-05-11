@@ -4,18 +4,19 @@ public class Registro {
     private String apellido;
     private String nombre;
     private int docIdent;
+    private Vehiculos autoVendido;
+    private Vehiculos caminetaVendida;
+    private Vehiculos motoVendida;
+
+
 
     //Constructor
-    public Registro(int montVenta,String codVendido, String apellido, String nombre, int docIdent){
-        this.montVenta = montVenta;
-        this.codVendido = codVendido;
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.docIdent = docIdent;
+    public Registro(){
+        
     }
 
     //Metodos o acciones de la clase Personas
-    //get y set de nombre
+    //get y set  
     public int getMontVenta(){
         return montVenta;
     }
@@ -43,7 +44,25 @@ public class Registro {
     public int getDocIdent(){
         return docIdent;
     }
-    public void segDocIdent(int docIdent){
+    public void setDocIdent(int docIdent){
         this.docIdent = docIdent;
+    }
+    public Vehiculos getAutoVendido(){
+        return autoVendido;
+    }
+    public void setAutoVendido(Vehiculos autoVendido){
+        this.autoVendido = autoVendido;
+    }
+    public Vehiculos getCaminetaVendida(){
+        return caminetaVendida;
+    }
+    public void setCaminetaVendida(Vehiculos caminetaVendida){
+        this.caminetaVendida = caminetaVendida;
+    }
+    public Vehiculos getMotoVendida(){
+        return motoVendida;
+    }
+    public void setMotoVendida(Vehiculos motoVendida){
+        this.motoVendida = motoVendida;
     }
 }

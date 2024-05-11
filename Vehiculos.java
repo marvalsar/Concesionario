@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 
 //Clase
 public class Vehiculos {
@@ -10,16 +9,12 @@ public class Vehiculos {
     private int kilometraje;
     
     //Constructor
-    public Vehiculos(String codigo, String marca, String tipo, int modelo, int kilometraje, int precio){
-        this.codigo = codigo;
-        this.marca = marca;
-        this.tipo = tipo;
-        this.modelo = modelo;
-        this.kilometraje = kilometraje;
+    public Vehiculos(){
+    
     }
 
 //Metodos o acciones de la clase Personas
-//get y set de nombre
+//get y set 
 public String getCodigo(){
     return codigo;
 }
