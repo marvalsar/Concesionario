@@ -5,11 +5,7 @@ public class Registro {
     private String nombre;
     private int docIdent;
     private Vehiculos autoVendido;
-    private Vehiculos caminetaVendida;
-    private Vehiculos motoVendida;
-
-
-
+    
     //Constructor
     public Registro(){
         
