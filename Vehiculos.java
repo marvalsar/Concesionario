@@ -13,7 +13,7 @@ public class Vehiculos {
     
     }
 
-//Metodos o acciones de la clase Personas
+//Metodos o acciones de la clase Vehículos
 //get y set 
 public String getCodigo(){
     return codigo;

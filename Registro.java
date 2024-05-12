@@ -15,7 +15,7 @@ public class Registro {
         
     }
 
-    //Metodos o acciones de la clase Personas
+    //Metodos o acciones de la clase Registro
     //get y set  
     public int getMontVenta(){
         return montVenta;
@@ -52,17 +52,5 @@ public class Registro {
     }
     public void setAutoVendido(Vehiculos autoVendido){
         this.autoVendido = autoVendido;
-    }
-    public Vehiculos getCaminetaVendida(){
-        return caminetaVendida;
-    }
-    public void setCaminetaVendida(Vehiculos caminetaVendida){
-        this.caminetaVendida = caminetaVendida;
-    }
-    public Vehiculos getMotoVendida(){
-        return motoVendida;
-    }
-    public void setMotoVendida(Vehiculos motoVendida){
-        this.motoVendida = motoVendida;
     }
 }

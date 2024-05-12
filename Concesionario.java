@@ -43,7 +43,7 @@ public class Concesionario {
         registrocamioneta.setApellido("Jimenez");
         registrocamioneta.setNombre("Federico");
         registrocamioneta.setDocIdent(78564523);
-        registrocamioneta.setCaminetaVendida(camioneta);
+        registrocamioneta.setAutoVendido(camioneta);
 
         //Objeto de la clase Registro registromotocicleta
         Registro registromotocicleta = new Registro();
@@ -52,14 +52,33 @@ public class Concesionario {
         registromotocicleta.setApellido("Espinosa");
         registromotocicleta.setNombre("Jaime");
         registromotocicleta.setDocIdent(9856321);
-        registromotocicleta.setMotoVendida(motocicleta);
+        registromotocicleta.setAutoVendido(motocicleta);
 
+        //Imprimo los datos del auto
         System.out.println("El código del vehículo es: " +auto.getCodigo());
         System.out.println("El tipo de vehículo es: " +auto.getTipo());
         System.out.println("La marca del vehículo es: "+auto.getMarca());
         System.out.println("El modelo del vehículo es: "+auto.getModelo());
         System.out.println("El kilometraje del vehículo es: "+auto.getKilometraje());
+        System.out.println("************************************************************");
+
+        //Imprimo los datos de la camioneta
+        System.out.println("El código del vehículo es: " +camioneta.getCodigo());
+        System.out.println("El tipo de vehículo es: " +camioneta.getTipo());
+        System.out.println("La marca del vehículo es: "+camioneta.getMarca());
+        System.out.println("El modelo del vehículo es: "+camioneta.getModelo());
+        System.out.println("El kilometraje del vehículo es: "+camioneta.getKilometraje());
+        System.out.println("************************************************************");
+
+        //Imprimo los datos de la motocicleta
+        System.out.println("El código del vehículo es: " +motocicleta.getCodigo());
+        System.out.println("El tipo de vehículo es: " +motocicleta.getTipo());
+        System.out.println("La marca del vehículo es: "+motocicleta.getMarca());
+        System.out.println("El modelo del vehículo es: "+motocicleta.getModelo());
+        System.out.println("El kilometraje del vehículo es: "+motocicleta.getKilometraje());
+        System.out.println("************************************************************");
         
+        //Imprimo el registo de la venta del auto
         System.out.println("**********REGISTRO DE VENTA*********");
         System.out.println("Monto de la venta:   "+registroauto.getMontVenta());
         System.out.println("Vehiculo (codigo):   "+registroauto.getCodVendido());
@@ -69,20 +88,22 @@ public class Concesionario {
         System.out.println("Nombre:************  "+registroauto.getNombre());
         System.out.println("Documento comprador: "+registroauto.getDocIdent());
 
+        //Imprimo el registro de la venta de la camioneta
         System.out.println("**********REGISTRO DE VENTA*********");
         System.out.println("Monto de la venta:   "+registrocamioneta.getMontVenta());
         System.out.println("Vehiculo (codigo):   "+registrocamioneta.getCodVendido());
-        System.out.println("Venículo (tipo):     "+registrocamioneta.getCaminetaVendida().getTipo());
-        System.out.println("Vehículo (marca)     "+registrocamioneta.getCaminetaVendida().getMarca());
+        System.out.println("Venículo (tipo):     "+registrocamioneta.getAutoVendido().getTipo());
+        System.out.println("Vehículo (marca)     "+registrocamioneta.getAutoVendido().getMarca());
         System.out.println("Apellido:**********  "+registrocamioneta.getApellido());
         System.out.println("Nombre:************  "+registrocamioneta.getNombre());
         System.out.println("Documento comprador: "+registrocamioneta.getDocIdent());
         
+        //Imprimo el registro de la venta de la motocicleta
         System.out.println("**********REGISTRO DE VENTA*********");
         System.out.println("Monto de la venta:   "+registromotocicleta.getMontVenta());
         System.out.println("Vehiculo (codigo):   "+registromotocicleta.getCodVendido());
-        System.out.println("Venículo (tipo):     "+registromotocicleta.getMotoVendida().getTipo());
-        System.out.println("Vehículo (marca)     "+registromotocicleta.getMotoVendida().getMarca());
+        System.out.println("Venículo (tipo):     "+registromotocicleta.getAutoVendido().getTipo());
+        System.out.println("Vehículo (marca)     "+registromotocicleta.getAutoVendido().getMarca());
         System.out.println("Apellido:**********  "+registromotocicleta.getApellido());
         System.out.println("Nombre:************  "+registromotocicleta.getNombre());
         System.out.println("Documento comprador: "+registromotocicleta.getDocIdent());
